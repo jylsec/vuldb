@@ -9,6 +9,7 @@ Firmware：https://www.totolink.net/home/menu/detail/menu_listtpl/download/id/23
 V9.1.0u.6619_B20230130
 ## Vulnerability Analysis
 The following image displays the code for a command injection vulnerability in the `UploadFirmware` handler function of  `cstecgi.cgi`. The value of the `FileName` parameter will be spliced ​​into the `mv %s %s` and be excuted by `doSystem` function, which allows an attacker to excute any command.
+
 ![Vulnerability](./code.png)
 ## POC
 ```python
