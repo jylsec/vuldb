@@ -11,9 +11,13 @@ V9.1.0u.6619_B20230130
 The following image displays the code for a command injection vulnerability in the `setWanCfg` handler function of  `cstecgi.cgi`. When the value of `proto` parameter !=6,
 the value of the `hostName` parameter will be spliced ​​into the `echo '%s' > /pro....` and be excuted by `doSystem` function, which allows an attacker to excute any command.
 
+
 `proto` parameter:
+
 ![code2](./code2.png)
+
 `hostName` parameter:
+
 ![code1](./code.png)
 ## POC
 ```python
