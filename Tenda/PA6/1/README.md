@@ -24,5 +24,6 @@ payload = {
 
 requests.request("POST", url, data=payload)
 ```
+![poc](./poc.png)
 ## NOTE
 The vendor was contacted early about this disclosure but did not respond in any way.
