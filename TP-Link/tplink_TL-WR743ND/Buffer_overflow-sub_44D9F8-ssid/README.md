@@ -10,7 +10,7 @@
 
 ## Vulnerability Analysis
 
-The program receives the value of the host field through the `httpGetEnv` function,concatenates it into a formatted string using the `strncpy` function. Since the attacker's input length isn't checked either , buffer overflow exists.
+The program receives the value of the host field through the `httpGetEnv` function, copy it using the `strncpy` function. Since the attacker's input length isn't checked either , buffer overflow exists.
 
 ![code](code.png)
 
