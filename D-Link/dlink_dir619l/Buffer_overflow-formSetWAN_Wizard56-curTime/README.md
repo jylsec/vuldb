@@ -14,7 +14,7 @@
 
 The program receives the value of the host field through the `websGetVar` function,concatenates it into a formatted string using the `sprintf` function. Since the `sprintf` lacks the boundary check and the attacker's input length isn't checked either , buffer overflow exists.
 
-![image-20250414000030179](Buffer_overflow-.assets\image-20250414000030179.png)
+![code](code.png)
 
 ## PoC
 
